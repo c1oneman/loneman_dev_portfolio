@@ -12,13 +12,13 @@ const Nav = () => {
         <div className="relative flex items-center justify-between h-16">
           <div className="flex-1 flex items-center mx-2 sm:items-stretch justify-start">
             <Link to="/">
-              <div className="hidden sm:block">
+              <div className="hidden md:block">
                 <h1 className="font-bold  text-lg">
                   Clayton Loneman
                   <span className="text-gray-500 font-medium">.dev</span>
                 </h1>
               </div>
-              <div className="block sm:hidden">
+              <div className="block md:hidden">
                 <h1 className="font-bold text-xl">
                   loneman
                   <span className="text-gray-500 font-medium">.dev</span>
@@ -74,7 +74,7 @@ const Nav = () => {
             Resume
           </Link>
           <Link
-            to="/careers"
+            to="/history"
             className=" text-gray-700 px-3 py-2 font-bold mx-2 hover:text-gray-400 hidden sm:block"
             aria-current="page"
             onMouseEnter={(e) => setAboutDropdownOpen(false)}
@@ -84,7 +84,7 @@ const Nav = () => {
           <Link
             to="/contact"
             rel="noopener noreferrer"
-            className="text-white px-4 py-2 rounded-full font-bold bg-blue-600 hover:bg-blue-500 ml-2 hidden sm:block"
+            className="text-white px-4 py-2 rounded-full font-bold bg-yellow-500 hover:bg-yellow-400 ml-2 hidden sm:block"
             onMouseEnter={(e) => setAboutDropdownOpen(false)}
           >
             Contact Me
