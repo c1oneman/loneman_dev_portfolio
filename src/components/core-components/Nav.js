@@ -12,13 +12,23 @@ const Nav = () => {
         <div className="relative flex items-center justify-between h-16">
           <div className="flex-1 flex items-center mx-2 sm:items-stretch justify-start">
             <Link to="/">
-              <div className="hidden md:block">
-                <h1 className="font-bold  text-lg">
+              <div className="hidden items-center justify-between md:flex">
+                <img
+                  className="rounded-full h-12 m-3"
+                  src="/images/profile.png"
+                  alt="Clayton Loneman"
+                />
+                <h1 className="font-bold text-lg">
                   Clayton Loneman
                   <span className="text-gray-500 font-medium">.dev</span>
                 </h1>
               </div>
-              <div className="block md:hidden">
+              <div className="flex items-center justify-between md:hidden">
+                <img
+                  className="rounded-full h-12 m-3"
+                  src="/images/profile.png"
+                  alt="Clayton Loneman"
+                />
                 <h1 className="font-bold text-xl">
                   loneman
                   <span className="text-gray-500 font-medium">.dev</span>
