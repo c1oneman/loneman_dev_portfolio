@@ -102,7 +102,7 @@ const Nav = () => {
         </div>
       </nav>
       <div
-        className={`z-50 m-0 h-screen w-full absolute right-0 bg-gray-50 dark:bg-gray-900  ${
+        className={`z-50 mt-2 m-0 h-screen w-full absolute right-0 bg-gray-50 dark:bg-gray-900  ${
           mobileDropdownOpen ? "flex" : "hidden"
         }`}
       >
