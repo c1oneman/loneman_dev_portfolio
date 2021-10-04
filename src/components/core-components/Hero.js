@@ -8,7 +8,7 @@ const Hero = ({ h1, h2, p }) => {
         <h2 class="text-2xl w-full tracking-tight font-bold text-gray-200 sm:text-3xl md:text-4xl p-2">
           {h2}
         </h2>
-        <p class="text-2xl w-full sm:w-full tracking-tight font-mediumtext-gray-200 sm:text-2xl md:text-3xl p-2">
+        <p class="text-2xl w-full sm:w-full tracking-tight font-medium text-gray-200 sm:text-2xl md:text-3xl p-2">
           {p}
         </p>
       </div>
