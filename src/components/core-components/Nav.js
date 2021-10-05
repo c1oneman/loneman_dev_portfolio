@@ -2,12 +2,23 @@ import { Link } from "react-router-dom";
 
 import MenuHamburger from "../svg/MenuHamburger.js";
 import { useState } from "react";
+import useScrollTrigger from "@mui/material/useScrollTrigger";
 
 const Nav = () => {
+  const trigger = useScrollTrigger({
+    disableHysteresis: true,
+    threshold: 0,
+  });
   const [aboutDropdownOpen, setAboutDropdownOpen] = useState(false);
   const [mobileDropdownOpen, setMobileDropdownOpen] = useState(false);
   return (
-    <div className="w-full border-b py-2 fixed z-10 top-0 bg-white dark:bg-gray-800">
+    <div
+      className={
+        "transition duration-200 ease-in-out " +
+        (trigger ? "shadow-xl" : "shadow") +
+        " w-full border-b py-2 fixed z-10 top-0 bg-white dark:bg-gray-800"
+      }
+    >
       <nav className="max-w-6xl mx-auto sm:px-6 lg:px-8">
         <div className="relative flex items-center justify-between h-16">
           <div className="flex-1 flex items-center mx-2 sm:items-stretch justify-start">
@@ -94,7 +105,7 @@ const Nav = () => {
           <Link
             to="/contact"
             rel="noopener noreferrer"
-            className="text-white px-4 py-2 rounded-full font-bold bg-yellow-500 hover:bg-yellow-400 ml-2 hidden sm:block"
+            className="transition duration-100 ease-in-out text-white px-4 py-2 rounded-full font-bold bg-yellow-500 hover:bg-yellow-400 ml-2 hidden sm:block"
             onMouseEnter={(e) => setAboutDropdownOpen(false)}
           >
             Contact Me
